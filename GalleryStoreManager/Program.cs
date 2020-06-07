@@ -1,4 +1,5 @@
 ﻿using System;
+using GalleryStoreManager.Tests;
 
 namespace GalleryStoreManager
 {
@@ -6,6 +7,10 @@ namespace GalleryStoreManager
     {
         public static void Main(string[] args)
         {
+
+            new FirstTest().Run();
+
+
             Console.WriteLine("Hello World!");
         }
     }
