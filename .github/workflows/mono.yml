@@ -1,16 +1,19 @@
 name: CI
-on: [push]
+on:   
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 jobs:
   build:
     name: Mono
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: setup-xamarin    
-#      uses: actions/Setup-MSBuild@v1
+    - name: setup-xamarin
       with:
-        mono-version: 6.6 # specify version in '<major>.<minor>' format    
-    - name: test
+        mono-version: 6.6 
+    - name: Build
       run: msbuild GalleryStoreManager
 
 
