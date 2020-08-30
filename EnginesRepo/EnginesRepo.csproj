@@ -7,4 +7,8 @@
   <ItemGroup>
     <Folder Include="Engines\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ModelsRepo\ModelsRepo.csproj" />
+    <ProjectReference Include="..\FilesTooling\FilesTooling.csproj" />
+  </ItemGroup>
 </Project>

@@ -46,6 +46,14 @@
       <Project>{2F454C44-0C0A-4021-8E32-AACB3B844E09}</Project>
       <Name>FilesTooling</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ModelsRepo\ModelsRepo.csproj">
+      <Project>{091C3E9E-BA65-4F95-A79C-02A95A54482D}</Project>
+      <Name>ModelsRepo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EnginesRepo\EnginesRepo.csproj">
+      <Project>{F942360E-E000-4626-9D24-50E218AA8E7B}</Project>
+      <Name>EnginesRepo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
