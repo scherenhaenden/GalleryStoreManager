@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilesTooling", "FilesToolin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalleryStoreManagerTests", "GalleryStoreManagerTests\GalleryStoreManagerTests.csproj", "{13F34EDF-CAC8-4019-9DC4-E0B8D1C1620C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnginesRepo", "EnginesRepo\EnginesRepo.csproj", "{F942360E-E000-4626-9D24-50E218AA8E7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -25,5 +27,9 @@ Global
 		{13F34EDF-CAC8-4019-9DC4-E0B8D1C1620C}.Debug|x86.Build.0 = Debug|Any CPU
 		{13F34EDF-CAC8-4019-9DC4-E0B8D1C1620C}.Release|x86.ActiveCfg = Release|Any CPU
 		{13F34EDF-CAC8-4019-9DC4-E0B8D1C1620C}.Release|x86.Build.0 = Release|Any CPU
+		{F942360E-E000-4626-9D24-50E218AA8E7B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F942360E-E000-4626-9D24-50E218AA8E7B}.Debug|x86.Build.0 = Debug|Any CPU
+		{F942360E-E000-4626-9D24-50E218AA8E7B}.Release|x86.ActiveCfg = Release|Any CPU
+		{F942360E-E000-4626-9D24-50E218AA8E7B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
