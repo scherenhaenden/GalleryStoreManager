@@ -5,9 +5,9 @@ jobs:
     name: Mono
     runs-on: ubuntu-latest
     steps:
-    - name: setup-xamarin
     - uses: actions/checkout@v2
-      uses: actions/Setup-MSBuild@v1
+    - name: setup-xamarin    
+#      uses: actions/Setup-MSBuild@v1
       with:
         mono-version: 6.6 # specify version in '<major>.<minor>' format    
     - name: test
