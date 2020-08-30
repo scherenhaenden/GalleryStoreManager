@@ -21,6 +21,7 @@
   <ItemGroup>
     <Folder Include="Find\" />
     <Folder Include="FileTypes\" />
+    <Folder Include="Hasher\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
