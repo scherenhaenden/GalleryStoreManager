@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageVersion>0.1</PackageVersion>
+    <Authors>Eddie Krill</Authors>
+    <PackageId>GalleryStoreManager.EnginesRepo</PackageId>
+    <Description>GalleryStoreManager.EnginesRepo</Description>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,5 +14,9 @@
   <ItemGroup>
     <ProjectReference Include="..\ModelsRepo\ModelsRepo.csproj" />
     <ProjectReference Include="..\FilesTooling\FilesTooling.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
+    <PackageReference Include="NuGet.Build" Version="2.12.1" />
   </ItemGroup>
 </Project>

@@ -24,13 +24,6 @@ namespace ModelsRepo.Files
         public string Name => Path.GetFileName(RawName);
         public string HashValue;
         public string Size;
-        public string CurrentPath
-        {
-            get
-            {
-                return Path.GetDirectoryName(rawName);
-            }
-        }
-
+        public string CurrentPath => Path.GetFileName(RawName);
     }
 }
