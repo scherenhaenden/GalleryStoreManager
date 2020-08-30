@@ -9,6 +9,7 @@
     <Description>This Project helpts to manage the files for the MediaStore</Description>
     <Owners>Eddie Krill</Owners>
     <PackageProjectUrl>https://github.com/scherenhaenden/GalleryStoreManager</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
