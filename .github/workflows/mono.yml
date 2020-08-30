@@ -8,15 +8,29 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-      
     steps:
-    - uses: actions/checkout@v2
-    - name: setup-xamarin
-    - uses: actions/setup-mono@v1
-      with:
-        mono-version: 6.6 
-    - name: Build
-      run: msbuild GalleryStoreManager
+        - uses: actions/checkout@v2
+        - name: Setup .NET Core
+          uses: actions/setup-dotnet@v1
+          with:
+            dotnet-version: 3.1.301
+        - name: Install dependencies
+          run: dotnet restore
+        - name: Build
+          run:  dotnet build ./GalleryStoreManagerDotNetStandard/ --configuration Release --no-restore
+        - name: Test
+          run: dotnet test --no-restore --verbosity normal
+    
+
+      
+    #steps:
+    #- uses: actions/checkout@v2
+    #- name: setup-xamarin
+    #- uses: actions/setup-mono@v1
+    #  with:
+    #    mono-version: 6.6 
+    #- name: Build
+    #  run: msbuild GalleryStoreManager
 
 
     
