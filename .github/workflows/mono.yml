@@ -9,12 +9,12 @@ jobs:
     name: Mono
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: setup-xamarin
-      with:
-        mono-version: 6.6 
-    - name: Build
-      run: msbuild GalleryStoreManager
+    #- uses: actions/checkout@v2
+    #- name: setup-xamarin
+    #  with:
+    #    mono-version: 6.6 
+    #- name: Build
+    #  run: msbuild GalleryStoreManager
 
 
     
