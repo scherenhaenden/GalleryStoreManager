@@ -17,22 +17,17 @@ namespace EnginesRepo.Engines
 
         public IEnumerable<GenericFiles> GetGenericFilesByPath(string path)
         {
-
             var files = seekFiles.GetFilePathsByTargetDirectory(path);
 
             List<GenericFiles> genericFiles = new List<GenericFiles>();
 
             foreach(var file in files) 
             {
-
-
                 var value = new GenericFiles() { RawName = file };
                 genericFiles.Add(value);
             }
 
             return genericFiles;
-
-
         }
     }
 }
