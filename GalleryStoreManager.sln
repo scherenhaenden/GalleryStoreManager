@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalleryStoreManager", "Gall
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilesTooling", "FilesTooling\FilesTooling.csproj", "{2F454C44-0C0A-4021-8E32-AACB3B844E09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalleryStoreManagerTests", "GalleryStoreManagerTests\GalleryStoreManagerTests.csproj", "{13F34EDF-CAC8-4019-9DC4-E0B8D1C1620C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,5 +21,9 @@ Global
 		{2F454C44-0C0A-4021-8E32-AACB3B844E09}.Debug|x86.Build.0 = Debug|Any CPU
 		{2F454C44-0C0A-4021-8E32-AACB3B844E09}.Release|x86.ActiveCfg = Release|Any CPU
 		{2F454C44-0C0A-4021-8E32-AACB3B844E09}.Release|x86.Build.0 = Release|Any CPU
+		{13F34EDF-CAC8-4019-9DC4-E0B8D1C1620C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{13F34EDF-CAC8-4019-9DC4-E0B8D1C1620C}.Debug|x86.Build.0 = Debug|Any CPU
+		{13F34EDF-CAC8-4019-9DC4-E0B8D1C1620C}.Release|x86.ActiveCfg = Release|Any CPU
+		{13F34EDF-CAC8-4019-9DC4-E0B8D1C1620C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
