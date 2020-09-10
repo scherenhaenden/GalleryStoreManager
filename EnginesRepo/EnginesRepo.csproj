@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <Folder Include="Engines\" />
+    <Folder Include="Engines\Duplicates\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ModelsRepo\ModelsRepo.csproj" />

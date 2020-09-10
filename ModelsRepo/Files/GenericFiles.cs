@@ -3,6 +3,8 @@ using System.IO;
 
 namespace ModelsRepo.Files
 {
+
+    //TODO: Take a look onto this class and refactor it if needed
     public class GenericFiles
     {
 
@@ -18,6 +20,41 @@ namespace ModelsRepo.Files
             {
                 this.rawName = value;
             }
+
+        }
+
+        private FileInfo generalFileInformation;
+
+        public FileInfo GeneralFileInformation
+        {
+            get
+            {
+                if(generalFileInformation == null) 
+                {
+
+                    CheckValues();
+                }
+
+
+                return generalFileInformation;
+            }
+
+        }
+
+        protected void CheckValues()
+        {
+            if (RawName != "")
+            {
+                //_FileName = Path.GetFileName(RawName);
+                //_Path = Path.GetDirectoryName(RawName);
+                CreateFileInfo();
+            }
+        }
+
+        protected void CreateFileInfo()
+        {
+            FileInfo FInfo = new FileInfo(RawName);
+            generalFileInformation = FInfo;
 
         }
 
