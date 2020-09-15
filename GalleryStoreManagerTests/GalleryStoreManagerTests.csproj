@@ -44,11 +44,34 @@
     <ItemGroup>
         <Compile Include="Tests.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="EngineRepoTests\Duplicates\DeleteDuplicatesTest.cs" />
+        <Compile Include="Constans\PathForTests.cs" />
     </ItemGroup>
     <ItemGroup>
       <Folder Include="TestFiles\" />
       <Folder Include="TestFiles\Origin\" />
       <Folder Include="FilesToolingTests\" />
+      <Folder Include="EngineRepoTests\" />
+      <Folder Include="EngineRepoTests\Duplicates\" />
+      <Folder Include="Constans\" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\EnginesRepo\EnginesRepo.csproj">
+        <Project>{F942360E-E000-4626-9D24-50E218AA8E7B}</Project>
+        <Name>EnginesRepo</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\FilesTooling\FilesTooling.csproj">
+        <Project>{2F454C44-0C0A-4021-8E32-AACB3B844E09}</Project>
+        <Name>FilesTooling</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\ModelsRepo\ModelsRepo.csproj">
+        <Project>{091C3E9E-BA65-4F95-A79C-02A95A54482D}</Project>
+        <Name>ModelsRepo</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\GalleryStoreManager\GalleryStoreManager.csproj">
+        <Project>{99F56C76-6782-44A6-83FA-7DA1ECD747E5}</Project>
+        <Name>GalleryStoreManager</Name>
+      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
